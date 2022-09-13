@@ -50,7 +50,7 @@ function Form(){
             <input type="checkbox" onClick={()=> toggleAgree(!agree)} {...register("agree")}/>
             <label htmlFor="checkbox"
             >Ik ga akkoord met de voorwaarden</label><br/>
-            <button type="submit" disabled={!agree}>Verzend</button>
+            <button className="sendbtn" type="submit" disabled={!agree}>Verzend</button>
         </form>
     );
 }

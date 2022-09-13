@@ -2,7 +2,7 @@ import React from "react";
 
 function Buttons({name, fruit,setFruit}) {
  return(
-    <div>
+    <div className="button">
         <h1>{name}</h1>
         <button
             disabled={fruit === 0}

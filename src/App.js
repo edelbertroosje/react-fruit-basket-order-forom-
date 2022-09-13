@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import './App.css';
 import Buttons from "./components/Buttons";
 import Form from "./components/Form";
-
+import logo from "./assets/screenshot-logo.png";
 
 function App() {
 
@@ -24,12 +24,12 @@ function App() {
   }
     return (
         <>
-            <h1>Fruitmand bezorgservice </h1>
+            <img src={logo} alt="photo"/>
             <Buttons name="🍓 Aardbei" fruit={aardbei} setFruit={setAardbei}/>
             <Buttons name="🍌 Banaan" fruit={banaan} setFruit={setBanaan}/>
             <Buttons name="🍎 Appels" fruit={apple} setFruit={setApple}/>
             <Buttons name="🥝 Kiwi's" fruit={kiwi} setFruit={setKiwi}/>
-            <button onClick={reset}>Reset</button>
+            <button className="reset" onClick={reset}>Reset</button>
             <Form />
         </>
     );
